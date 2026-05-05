@@ -1,4 +1,12 @@
-<!-- MENU SECTION -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Menu</title>
+</head>
+
+<body>
+
 <section id="menu" class="menu">
   <h2>Our Menu 🍔</h2>
 
@@ -36,9 +44,51 @@
 
     <h3>Deals</h3>
     <div class="menu-grid">
-      <div class="card"><h4>Kids Deal 1</h4><span>Rs. 410</span><p>Burger + Fries + Drink</p></div>
-      <div class="card"><h4>Kids Deal 2</h4><span>Rs. 390</span><p>Nuggets + Drink</p></div>
+      <div class="card">
+        <h4>Kids Deal 1</h4>
+        <span>Rs. 410</span>
+        <p>Burger + Fries + Drink</p>
+      </div>
+
+      <div class="card">
+        <h4>Kids Deal 2</h4>
+        <span>Rs. 390</span>
+        <p>Nuggets + Drink</p>
+      </div>
     </div>
 
   </div>
 </section>
+
+</body>
+</html>
+🎨 Now what you NEED in CSS (important)
+
+Add this in style.css to make it look like your image:
+
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.menu {
+  text-align: center;
+  padding: 20px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
